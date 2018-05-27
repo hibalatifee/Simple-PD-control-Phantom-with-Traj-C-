@@ -65,7 +65,7 @@ HDCallbackCode HDCALLBACK Start_teleoperation(void *pUserData) //This code runs 
 		slv.force[0] =  (Omni_Saturation(K_simul*(px[i] - slv.position[0]) + slv_damping*slv.disp[0]))/3;
 		cout<<"Slave force 1: "<<slv.force[0]<<endl;
 		//Sleep(1);
-		slv.force[1] =  (Omni_Saturation(K_simul*(py[i] - slv.position[1])+ slv_damping*slv.disp[1]))/4;
+		slv.force[1] =  (Omni_Saturation(K_simul*(py[i] - slv.position[1])+ slv_damping*slv.disp[1]))/3;
 		cout<<"Slave force 2: "<<slv.force[1]<<endl;
 		//Sleep(1);
 		slv.force[2] =  (Omni_Saturation(K_simul*(pz[i] - slv.position[2])+ slv_damping*slv.disp[2]))/20;
