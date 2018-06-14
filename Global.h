@@ -21,8 +21,8 @@ ofstream debug("debug.txt");
 #define SLAVE_DEVICE_NAME  "slave"
 
 #define LIMIT_FORCE	0.5		//For premium, 5. For Omni, should be 2.5 or 3
-#define K_simul		0.7
-#define slv_damping	0.5
+#define K_simul		0.01
+#define slv_damping	0.01
 #define SCALE		1 
 
 //---------------------------------------------------------------

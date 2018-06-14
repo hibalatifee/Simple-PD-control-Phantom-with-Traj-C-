@@ -72,6 +72,7 @@ public:
 	afx_msg void OnPaint();
 
 	afx_msg void OnBnClickedcamera();
+	afx_msg void OnBnClickedCancel();
 };
 //---------------------------------------------------------------------
 class Phantom_winapp : public CWinApp
@@ -100,6 +101,7 @@ BEGIN_MESSAGE_MAP(Phantom, CDialog)   // phantom is owner class name, CDialog is
 
 
 	ON_BN_CLICKED(CB_camera, &Phantom::OnBnClickedcamera)
+	ON_BN_CLICKED(IDCANCEL, &Phantom::OnBnClickedCancel)
 END_MESSAGE_MAP()
 //-----------------------------------------------------------------------------------------
 
@@ -216,3 +218,10 @@ void Phantom::OnBnClickedcamera()
 	
 	}
 
+
+
+void Phantom::OnBnClickedCancel()
+{
+	// TODO: Add your control notification handler code here
+	CDialog::OnCancel();
+}
